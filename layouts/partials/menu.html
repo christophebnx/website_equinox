@@ -1,0 +1,39 @@
+{{- $currentLang := .Site.Language.Lang -}}
+{{- $menuData := index .Site.Data.menus $currentLang -}}
+{{- $mainMenu := $menuData.main -}}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/{{ $currentLang }}/">{{ .Site.Title }}</a>
+    
+    <!-- Burger button pour mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        {{- range $mainMenu -}}
+          {{- if .children -}}
+            <!-- Item avec dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown{{ .weight }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ .name }}
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown{{ .weight }}">
+                {{- range .children -}}
+                  <li><a class="dropdown-item" href="{{ .url }}">{{ .name }}</a></li>
+                {{- end -}}
+              </ul>
+            </li>
+          {{- else -}}
+            <!-- Item simple -->
+            <li class="nav-item">
+              <a class="nav-link{{ if eq $.RelPermalink .url }} active{{ end }}" href="{{ .url }}">{{ .name }}</a>
+            </li>
+          {{- end -}}
+        {{- end -}}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,33 @@
+main:
+  - name: "Home"
+    url: "/en/"
+    weight: 1
+  
+  - name: "Team"
+    url: "/en/team/"
+    weight: 2
+  
+  - name: "Support"
+    url: "#"
+    weight: 3
+    children:
+      - name: "Personal"
+        url: "/en/support/personal/"
+        weight: 1
+      - name: "Institutions"
+        url: "/en/support/institutions/"
+        weight: 2
+  
+  - name: "Rates"
+    url: "/en/rates/"
+    weight: 4
+  
+  - name: "Contact and access"
+    url: "/en/contact/"
+    weight: 5
+
+# Add other menus here (footer, sidebar, etc.)
+# footer:
+#   - name: "Example"
+#     url: "/en/example/"
+#     weight: 1

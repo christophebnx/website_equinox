@@ -1,0 +1,33 @@
+main:
+  - name: "Home"
+    url: "/nl/"
+    weight: 1
+  
+  - name: "Team"
+    url: "/nl/team/"
+    weight: 2
+  
+  - name: "Begeleiding"
+    url: "#"
+    weight: 3
+    children:
+      - name: "Persoonlijk"
+        url: "/nl/begeleiding/persoonlijk/"
+        weight: 1
+      - name: "Instellingen"
+        url: "/nl/begeleiding/instellingen/"
+        weight: 2
+  
+  - name: "Tarieven"
+    url: "/nl/tarieven/"
+    weight: 4
+  
+  - name: "Contact en toegang"
+    url: "/nl/contact/"
+    weight: 5
+
+# Ajoutez d'autres menus ici (footer, sidebar, etc.)
+# footer:
+#   - name: "Voorbeeld"
+#     url: "/nl/voorbeeld/"
+#     weight: 1

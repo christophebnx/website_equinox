@@ -1,0 +1,33 @@
+main:
+  - name: "Accueil"
+    url: "/fr/"
+    weight: 1
+  
+  - name: "Équipe"
+    url: "/fr/equipe/"
+    weight: 2
+  
+  - name: "Accompagnements"
+    url: "#"
+    weight: 3
+    children:
+      - name: "Personnalisé"
+        url: "/fr/accompagnements/personalise/"
+        weight: 1
+      - name: "Institutions"
+        url: "/fr/accompagnements/institutions/"
+        weight: 2
+  
+  - name: "Tarifs"
+    url: "/fr/tarifs/"
+    weight: 4
+  
+  - name: "Contact et accès"
+    url: "/fr/contact/"
+    weight: 5
+
+# Ajoutez d'autres menus ici (footer, sidebar, etc.)
+# footer:
+#   - name: "Exemple"
+#     url: "/fr/exemple/"
+#     weight: 1

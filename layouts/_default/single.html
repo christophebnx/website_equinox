@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="container my-5">
+    <article>
+        <header class="mb-4">
+            <h1>{{ .Title }}</h1>
+            {{ if .Description }}
+            <p class="lead">{{ .Description }}</p>
+            {{ end }}
+        </header>
+        
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </article>
+</main>
+{{ end }}

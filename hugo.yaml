@@ -1,3 +1,29 @@
-baseURL: 'https://example.org/'
-languageCode: 'fr-fr'
-title: 'Mon nouveau site Hugo'
+baseURL: "https://localhost:1313"
+languageCode: "nl"
+defaultContentLanguage: "nl"
+defaultContentLanguageInSubdir: true
+title: "EquiNox"
+
+# Multilingue
+languages:
+  nl:
+    languageCode: "nl-NL"
+    languageName: "Nederlands"
+    weight: 1
+    contentDir: "content/nl"
+  fr:
+    languageCode: "fr-FR"
+    languageName: "Français"
+    weight: 2
+    contentDir: "content/fr"
+  en:
+    languageCode: "en-GB"
+    languageName: "English"
+    weight: 3
+    contentDir: "content/en"
+
+# URLs
+permalinks:
+  pages: "/:slug/"
+
+uglyURLs: false
