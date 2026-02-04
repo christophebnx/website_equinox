@@ -1,0 +1,15 @@
+contact:
+  email: "claudia@equinox.be"
+  phone: "+32 XXX XX XX XX"
+  address:
+    street: "Sint-Anna Straat, 42"
+    postal: "3476"
+    city: "Overijse"
+    country: "Belgique"
+    latitude: 50.8503
+    longitude: 4.3517
+    zoom: 16  # Niveau de zoom (15-18 pour du détail urbain)
+
+social:
+  facebook: "https://facebook.com/equinox"
+  instagram: "https://instagram.com/equinox"
