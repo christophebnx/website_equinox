@@ -1,1 +1,35 @@
+# Hugo
+/public/
+/resources/_gen/
+/.hugo_build.lock
+hugo_stats.json
+
+# Sveltia CMS
+.sveltia/
+
+# OS
 .DS_Store
+Thumbs.db
+*~
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-*
+
+# Node (au cas où tu installes des deps plus tard)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+*.backup
+*~
+
+
